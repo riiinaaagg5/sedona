@@ -1,0 +1,19 @@
+ul {
+    @include list-none;
+}
+
+button {
+    @include button-none;
+}
+
+body {
+    margin: 0;
+}
+
+.boby__container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+

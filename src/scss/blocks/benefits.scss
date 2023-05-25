@@ -1,0 +1,136 @@
+.benefit__title {
+  margin: 0;
+  margin-bottom: 11px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.benefit__container {
+  background-color: #81b3d2;
+  padding-top: 54px;
+  padding-bottom: 40px;
+
+  position: relative;
+
+}
+
+.benefit__text {
+
+  margin: 0;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  &:not(:last-of-type) {
+    margin-bottom: 17px;
+  }
+}
+
+.inner-benefits {
+  padding-left: 70px;
+  padding-right: 18px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+
+
+.inner-benefit__text {
+  margin: 0;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.inner-benefit__title {
+  margin: 0;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.inner-benefit {
+  &::after {
+    @include defaul-pseudo-element(40px);
+    top: 0;
+    left: -47px;
+  }
+  position: relative;
+  &--haus {
+    &::after {
+      background: url(./../../public/img/Frame\ 8.svg);
+    }
+  }
+
+  &--souvenirs {
+    &::after {
+      background: url(./../../public/img/Frame\ 9.svg);
+    }
+  }
+
+  &--food {
+    &::after {
+      background: url(./../../public/img/Frame\ 10.png);
+    }
+  }
+}
+
+.benefits__li {
+
+    // &:not(:first-of-type) {
+    //     background-color: #81b3d2;
+    //     padding-top: 39px;
+    //     padding-bottom: 35px;
+    // }
+    
+    &:first-of-type .benefit__container {
+        &::after {
+          @include defaul-pseudo-element(100%, 37px);
+          background: url(./../../public/img/white\ copy\ 2.svg) no-repeat center center ;
+          top: 0;
+          background-size: cover;
+        }
+      }
+
+      &--gray {
+        padding: 24px 41px;
+          background: #EEEEEE;
+          & .benefit__title {
+            color: #000000;
+          }
+
+          & .benefit__text {
+            color: #333333;
+            font-weight: 400;
+          }
+          &:not(:last-of-type) {
+            border-bottom: 1px solid #D6D6D6;
+          }
+      }
+
+
+}
+
+.benefit__img {
+    width: 100%;
+    max-height: 286px;
+}
